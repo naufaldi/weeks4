@@ -1,20 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Document</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
 
-<body>
- <button class="event-button">Click me!</button>
+  <body>
+    <button class="event-button">Click me!</button>
+    <div class="parent">
+      <div class="child">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae quaerat
+        nostrum modi natus vitae vero aperiam quod minus vel. Assumenda, saepe.
+        Officiis vitae, quo dolor temporibus enim ea ut iusto.
+      </div>
+    </div>
+    <h2>My First Page</h2>
 
-</body>
-<script>
- const button = document.querySelector('.event-button');
- button.addEventListener('click', function () {
-   alert("Hey there!");
- });
-</script>
+    <p id="demo"></p>
+    <div class="parent">
+      <div class="child">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae quaerat
+        nostrum modi natus vitae vero aperiam quod minus vel. Assumenda, saepe.
+        Officiis vitae, quo dolor temporibus enim ea ut iusto.
+      </div>
+    </div>
+    <h2>My First Page</h2>
+
+    <p id="demo"></p>
+  </body>
+  <script>
+    const button = document.querySelector('.event-button');
+    button.addEventListener('click', function () {
+      alert('Hey there!');
+    });
+  </script>
 </html>
