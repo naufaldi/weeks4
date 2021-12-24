@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    @keyframes red-to-blue {
+      0% {
+        background: red;
+        color: #fff;
+        transform: translateY(40px);
+      }
+      100% {
+        background: blue;
+        color: #000;
+        transform: translateY(0);
+      }
+    }
+    .animated-color {
+      animation-name: red-to-blue;
+      animation-duration: 2s;
+      animation-delay: 0s;
+      animation-timing-function: ease-in;
+      animation-iteration-count: 1;
+    }
+    .box {
+      height: 40px;
+      width: 40px;
+      background: red;
+    }
+    .box-2 {
+      animation-delay: 1s;
+    }
+    .box-3 {
+      animation-delay: 2s;
+    }
+  </style>
+  <body>
+    <div>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem,
+      corrupti ad. Facilis obcaecati assumenda omnis distinctio ab mollitia
+      amet? Obcaecati libero dolor doloremque dicta facere beatae quas ipsa
+      aperiam reprehenderit.
+    </div>
+    <div style="display: flex">
+      <div class="animated-color box"></div>
+      <div class="animated-color box box-2"></div>
+      <div class="animated-color box box-3"></div>
+    </div>
+  </body>
+</html>

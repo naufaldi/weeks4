@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+    <link rel="stylesheet" href="/style/style.css" />
+    <style></style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae quaerat
+        nostrum modi natus vitae vero aperiam quod minus vel. Assumenda, saepe.
+        Officiis vitae, quo dolor temporibus enim ea ut iusto.
+      </div>
+    </div>
+    <h2>My First Page</h2>
+
+    <p id="demo"></p>
+  </body>
+  <script src="/js/main.js"></script>
+  <script>
+    document.getElementById('demo').innerHTML = 'Hello World!';
+    document.querySelector('.child').style.backgroundColor = 'red';
+    //
+    const monthlyRent = 500;
+    const nameMonth = 'January';
+    const a = 10;
+    const b = 20;
+    const yearlyRent = monthlyRent * 12;
+    console.log(yearlyRent);
+    console.log('Haloo');
+    console.log('The name of the month is ' + nameMonth);
+    console.log(' a > b is ' + (a < b));
+    console.log('==============================');
+    const skyIsBlue = false;
+
+    if (a !== b) {
+      console.log('The sky is blue!');
+    } else {
+      console.log('The sky is … not blue?');
+    }
+    console.log('==============================');
+
+    function addTwo(number) {
+      return number + 2;
+    }
+
+    const finalAnswer = 5 + 2;
+    const finalAnswer2 = 10 + 2;
+    console.log(finalAnswer);
+    console.log(finalAnswer2);
+    console.log('==============================');
+    function greet(firstName, lastName, whoGreets) {
+      return console.log(
+        'Hello ' +
+          firstName +
+          'May Name ' +
+          lastName +
+          ' How are you?' +
+          whoGreets
+      );
+    }
+    greet('John', 'Doe', 'Aldi');
+    greet('james', 'moran', 'Santika');
+    console.log('Hello JohnMay Name Doe How are you? Aldi');
+    console.log('Hello JohnMay Name Doe How are you? Aldi');
+    console.log('==============================');
+    const someVariable = 'Hello World';
+    function addFive(number) {
+      // const someVariable = "you can't see me outside this function";
+      return console.log(
+        'The number is ' + someVariable + ' and the sum is ' + (number + 5)
+      );
+    }
+
+    addFive(10);
+    console.log('someVariable: ' + someVariable);
+  </script>
+</html>
